@@ -8,6 +8,12 @@ class MobileSyncModule extends AApiModule
 		
 		$this->broadcastEvent('GetInfo', array(&$mResult));
 
+		$aLoginList = array();
+		
+		$this->broadcastEvent('GetUserAuthAccountLogin', array(&$aLoginList));
+		
+		$mResult['LoginList'] = $aLoginList;
+		
 		return $mResult;
 	}
 	
