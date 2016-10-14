@@ -31,8 +31,12 @@ class MobileSyncModule extends AApiModule
 		\CApi::checkUserRoleIsAtLeast(\EUserRole::NormalUser);
 		
 		$mResult = array();
-		
-		$this->broadcastEvent('GetInfo', array(&$mResult));
+		$aArgs = array();
+		$this->broadcastEvent(
+			'GetInfo', 
+			$aArgs,
+			$mResult
+		);
 		
 		return $mResult;
 	}
