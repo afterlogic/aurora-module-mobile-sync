@@ -18,7 +18,9 @@
  * @package Modules
  */
 
-class MobileSyncModule extends AApiModule
+namespace Aurora\Modules;
+
+class MobileSyncModule extends \AApiModule
 {
 	/***** public functions might be called with web API *****/
 	/**
