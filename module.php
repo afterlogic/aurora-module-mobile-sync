@@ -20,7 +20,7 @@
 
 namespace Aurora\Modules;
 
-class MobileSyncModule extends \AApiModule
+class MobileSyncModule extends \Aurora\System\AbstractModule
 {
 	/***** public functions might be called with web API *****/
 	/**
@@ -30,7 +30,7 @@ class MobileSyncModule extends \AApiModule
 	 */
 	public function GetInfo()
 	{
-		\CApi::checkUserRoleIsAtLeast(\EUserRole::NormalUser);
+		\Aurora\System\Api::checkUserRoleIsAtLeast(\EUserRole::NormalUser);
 		
 		$mResult = array();
 		$aArgs = array();
