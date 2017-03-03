@@ -20,7 +20,7 @@
 
 namespace Aurora\Modules;
 
-class MobileSyncModule extends \Aurora\System\AbstractModule
+class MobileSyncModule extends \Aurora\System\Module\AbstractModule
 {
 	/***** public functions might be called with web API *****/
 	/**
