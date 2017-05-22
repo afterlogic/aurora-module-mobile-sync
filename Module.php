@@ -23,7 +23,7 @@ class Module extends \Aurora\System\Module\AbstractModule
 	 */
 	public function GetInfo()
 	{
-		\Aurora\System\Api::checkUserRoleIsAtLeast(\EUserRole::NormalUser);
+		\Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::NormalUser);
 		
 		$mResult = array();
 		$aArgs = array();
