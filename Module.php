@@ -16,6 +16,8 @@ namespace Aurora\Modules\MobileSync;
  */
 class Module extends \Aurora\System\Module\AbstractModule
 {
+	public function init() {}
+
 	/***** public functions might be called with web API *****/
 	/**
 	 * Collects the information about mobile sync from other modules and returns it.
