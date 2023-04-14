@@ -22,6 +22,15 @@ class Module extends \Aurora\System\Module\AbstractModule
     {
     }
 
+    /**
+     *
+     * @return Module
+     */
+    public static function Decorator()
+    {
+        return parent::Decorator();
+    }
+
     /***** public functions might be called with web API *****/
     /**
      * Collects the information about mobile sync from other modules and returns it.
