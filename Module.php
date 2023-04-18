@@ -31,6 +31,15 @@ class Module extends \Aurora\System\Module\AbstractModule
         return parent::Decorator();
     }
 
+    /**
+     *
+     * @return Settings
+     */
+    protected function GetModuleSettings()
+    {
+        return $this->oModuleSettings;
+    }
+
     /***** public functions might be called with web API *****/
     /**
      * Collects the information about mobile sync from other modules and returns it.
