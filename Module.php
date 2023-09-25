@@ -20,9 +20,7 @@ namespace Aurora\Modules\MobileSync;
  */
 class Module extends \Aurora\System\Module\AbstractModule
 {
-    public function init()
-    {
-    }
+    public function init() {}
 
     /**
      * @return Module
